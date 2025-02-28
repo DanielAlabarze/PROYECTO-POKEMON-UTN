@@ -1,0 +1,26 @@
+:root {
+  font-family: "Roboto", serif;
+  --back: rgba(218, 198, 198, 0.582);
+  --card: rgba(128, 128, 128, 0.342);
+  --text: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--back);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+body.dark-theme { 
+  --back: black;
+  --card: #202020;
+  --text: white;
+}

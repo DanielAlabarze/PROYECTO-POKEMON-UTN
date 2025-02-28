@@ -1,0 +1,76 @@
+.containerPokemons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  width: 100%;
+  min-height: calc(100vh - 9rem);
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2rem;
+}
+
+.pokemon-logo {
+  width: 400px;
+  height: auto;
+}
+
+.main-text {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.btnSearchMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: red;
+  color: #f2f2f2;
+  border-radius: 10px;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border: none;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: -3rem;
+  gap: 5px;
+  font-size: 0.8rem;
+  transition: 0.2s;
+}
+.btnSearchMain:hover {
+  background-color: black;
+  transition: background-color 0.5s;
+}
+
+@media (max-width: 500px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .pokemon-logo {
+    width: 250px;
+    height: auto;
+  }
+  .main-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .btnSearchMain {
+    margin-top: 0.6rem;
+    padding-inline: 0.5rem;
+    padding-block: 0.4rem;
+  }
+}

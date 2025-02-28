@@ -1,0 +1,12 @@
+.containerPokemons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.pokemons {
+  height: calc(100vh - 10rem);
+  top: 5rem;
+  width: 100%;
+  overflow-y: auto;
+}
+

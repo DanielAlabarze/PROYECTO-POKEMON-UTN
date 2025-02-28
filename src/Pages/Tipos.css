@@ -1,0 +1,119 @@
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
+  color: #060311;
+}
+
+.div1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  margin-inline: 2rem;
+}
+
+.div2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  margin-inline: 2rem;
+}
+
+.containerTipos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+  padding-top: 1rem;
+  padding-inline: 1rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.containerTipo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-block: 1rem;
+}
+
+.DivTipos1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 5rem;
+  height: 2.5rem;
+  background-color: red;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
+.DivTipos2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 11rem;
+  height: 8rem;
+  color: rgb(244, 248, 243);
+  background-color: rgb(14, 13, 13);
+  margin: 0.2rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.containerImage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
+}
+
+.contenedorTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
+}
+
+.poke-imagen {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.btnSearchTipo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: red;
+  color: #f2f2f2;
+  border-radius: 10px;
+  padding-inline: 0.7rem;
+  padding-block: 0.6rem;
+  border: none;
+  margin: auto;
+  margin-block: 1rem;
+  gap: 5px;
+  font-size: 0.8rem;
+  transition: 0.2s;
+}
+
+.btnSearchTipo:hover {
+  background-color: black;
+  transition: background-color 0.5s;
+}

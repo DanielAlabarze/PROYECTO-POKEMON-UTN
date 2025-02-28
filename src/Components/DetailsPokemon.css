@@ -1,0 +1,159 @@
+.modalContainer {
+  background-color: rgba(139, 100, 100, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 5rem;
+  width: 100%;
+  height: calc(100vh - 5rem);
+  place-items: center;
+  transition: all 0.2s;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.modalBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-color: black;
+  width: 60%;
+  height: 80%;
+  color: white;
+  border-radius: 50px;
+  position: absolute;
+  padding: 1rem;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 3rem;
+}
+
+.imageDetails {
+  width: 14rem;
+}
+
+.type {
+  font-size: 1.5rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.5rem;
+  align-self: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.number {
+  margin: 1rem;
+  font-size: 2rem;
+}
+.title {
+  margin: 1rem;
+  text-transform: capitalize;
+  font-size: 3rem;
+  color: red;
+  font-weight: 700;
+}
+.titleSection {
+  margin: 1rem;
+}
+
+.abilitiesSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.titleSectionSpan {
+  padding: 0.5rem;
+}
+
+@media (max-width: 950px) {
+  .modalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 5rem;
+    width: 100%;
+    height: calc(100vh - 5rem);
+
+    transition: all 0.2s;
+    z-index: 1;
+  }
+
+  .modalBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    width: 80%;
+    height: 90%;
+    color: white;
+    border-radius: 50px;
+    position: absolute;
+  }
+
+  .imageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: auto;
+    margin-top: 0;
+  }
+  .dataContainer {
+    display: flex;
+    height: 50%;
+    margin-bottom: 0;
+  }
+
+  .imageDetails {
+    width: auto;
+    height: 10rem;
+  }
+
+  .type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .number {
+    font-size: 1.5rem;
+  }
+  .titleSection {
+    margin: 0.3rem;
+  }
+
+  .title {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  .abilitiesSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titleSectionSpan {
+    padding: 0.3rem;
+  }
+}
