@@ -17,7 +17,7 @@ export const SearchPage = () => {
 
     if (!searchTerm) return;
 
-    setLoading(true); 
+    setLoading(true);
 
     const pokemon = await searchPokemon(searchTerm);
     if (pokemon) {
@@ -35,14 +35,21 @@ export const SearchPage = () => {
 
   return (
     <>
-      <Search
-        searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm}
-        handleSearch={handleSearch}
-      />
-      {loading && <Loader />}
-      {error && <p className="errorMessage">{error}</p>} 
-      {selectedPokemon && <DetailsPokemon pokemon={selectedPokemon} close={handleCloseDetails} />}
+      <div className="containerSearchPage">
+        <Search
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
+          handleSearch={handleSearch}
+        />
+        <div className="containerLoaderError">
+          {loading && <Loader />}
+          {error && <p className="errorMessage">{error}</p>}
+        </div>
+      </div>
+      {selectedPokemon && (
+        <DetailsPokemon pokemon={selectedPokemon} close={handleCloseDetails} />
+      )}
+
       <Footer />
     </>
   );
