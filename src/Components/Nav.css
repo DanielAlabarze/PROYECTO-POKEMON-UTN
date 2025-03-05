@@ -73,15 +73,14 @@
   width: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .navBar {
     padding-inline: 1.5rem;
   }
 
   .navItems {
     position: absolute;
-    top: 4.95rem;
-
+    top: 4.84rem;
     left: 0;
     background-color: red;
     display: flex;
