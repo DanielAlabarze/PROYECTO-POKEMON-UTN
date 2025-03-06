@@ -117,3 +117,9 @@ li a:hover {
   background-color: black;
   transition: background-color 0.5s;
 }
+
+@media (max-width: 600px) {
+  .DivTipos2 {
+    width: 10rem;
+  }
+}
