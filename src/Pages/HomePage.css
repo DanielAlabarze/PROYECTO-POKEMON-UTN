@@ -8,13 +8,20 @@
 
 .main-container {
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   padding-inline: 2rem;
   padding-block: 1rem;
   width: 100%;
+  min-height: calc(100vh - 9rem);
   text-align: center;
+}
+
+.fechaHora {
+  display: flex;
+  justify-content: space-around;
+  width: 19.5rem;
 }
 
 .main-title {

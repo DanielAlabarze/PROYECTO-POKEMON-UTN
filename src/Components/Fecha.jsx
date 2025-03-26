@@ -27,7 +27,7 @@ export const Fecha = () => {
 
     return (
         <>
-            <p>{nombreDelDia} {diaFormateado} de {nombreDelMes} de {ANO}</p>
+            <p>{nombreDelDia}, {diaFormateado} de {nombreDelMes} de {ANO}</p>
             <br />
         </>
     );

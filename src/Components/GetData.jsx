@@ -17,6 +17,20 @@ export const GetData = () => {
       }
       const infoPokemon = await response.json();
 
+      const speciesResponse = await fetch(infoPokemon.species.url);
+      const speciesData = await speciesResponse.json();
+
+      const spanishFlavorText = speciesData.flavor_text_entries.find(
+        (entry) => entry.language.name === "es"
+      );
+      const description = spanishFlavorText
+        ? spanishFlavorText.flavor_text
+        : "Descripción no disponible";
+
+      const habitat = speciesData.habitat
+        ? speciesData.habitat.name
+        : "No disponible";
+
       const abilities = infoPokemon.abilities.map((a) => a.ability.name);
       const stats = infoPokemon.stats.map((s) => ({
         name: s.stat.name,
@@ -25,7 +39,7 @@ export const GetData = () => {
       const types = infoPokemon.types.map((t) => t.type.name);
 
       return {
-        id: infoPokemon.id.toString().padStart(5, '0'),
+        id: infoPokemon.id.toString().padStart(5, "0"),
         nombre: infoPokemon.name,
         imagen:
           infoPokemon.sprites.other.dream_world.front_default ||
@@ -33,6 +47,10 @@ export const GetData = () => {
         abilities,
         stats,
         types,
+        description,
+        habitat,
+        altura: infoPokemon.height,
+        peso: infoPokemon.weight,
       };
     } catch (error) {
       console.error("Error Pokemon data:", error);

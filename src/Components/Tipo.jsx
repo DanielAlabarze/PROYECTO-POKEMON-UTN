@@ -47,7 +47,9 @@ export default function Tipo() {
 
   return (
     <div className="containerTipo">
-      <h2>Pokémons de Tipo {params.tipo} </h2>
+      <h2>
+        Pokémons de Tipo <span className="spanTipo">{params.tipo}</span>
+      </h2>
       <span>- Encontrá sus habilidades en el Buscador -</span>
       <br />
       <FaArrowAltCircleDown size={"1.5rem"} color={"red"} />
@@ -75,6 +77,7 @@ export default function Tipo() {
                     />
                   )}
                 </div>
+
                 <div className="contenedorTitulo">
                   {!imageUrl && !imageLoading && (
                     <p>- Imagen no disponible -</p>

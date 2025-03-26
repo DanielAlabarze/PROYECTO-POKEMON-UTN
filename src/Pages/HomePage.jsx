@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { IoSearchSharp } from "react-icons/io5";
 import { Fecha } from "../Components/Fecha";
+import RelojDigital from "../Components/RelojDijital";
 import { Footer } from "../Components/Footer";
 
 import "./HomePage.css";
@@ -12,7 +13,9 @@ export const HomePage = () => {
     <>
       <div className="containerPokemons ">
         <div className="main-container">
-          <Fecha />
+        <div className="fechaHora">
+          <Fecha /><span> - </span> <RelojDigital />
+          </div>
           <img
             src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg"
             alt="pikachu"
